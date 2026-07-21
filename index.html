@@ -13,18 +13,19 @@
 
 
 html {
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 
 body {
 
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f5f7fa;
-    color:#333;
+margin:0;
+font-family:Arial, sans-serif;
+background:#f5f7fa;
+color:#333;
 
 }
+
 
 
 /* Navigation */
@@ -32,31 +33,32 @@ body {
 
 nav {
 
-    background:white;
-    padding:18px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:100;
+background:white;
+padding:18px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:100;
 
 }
 
 
 nav a {
 
-    color:#1f2937;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+color:#1f2937;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
 
 }
 
 
 nav a:hover {
 
-    color:#2563eb;
+color:#2563eb;
 
 }
+
 
 
 
@@ -66,20 +68,20 @@ nav a:hover {
 
 header {
 
-    background:
-    linear-gradient(
-    rgba(31,41,55,0.75),
-    rgba(31,41,55,0.75)
-    ),
-    url("profile.jpg");
+background:
+linear-gradient(
+rgba(31,41,55,0.75),
+rgba(31,41,55,0.75)
+),
+url("profile.jpg");
 
-    background-size:cover;
-    background-position:center;
+background-size:cover;
+background-position:center;
 
-    color:white;
-    text-align:center;
+color:white;
+text-align:center;
 
-    padding:100px 20px;
+padding:100px 20px;
 
 }
 
@@ -87,14 +89,14 @@ header {
 
 .profile {
 
-    width:170px;
-    height:170px;
+width:170px;
+height:170px;
 
-    border-radius:50%;
+border-radius:50%;
 
-    object-fit:cover;
+object-fit:cover;
 
-    border:6px solid white;
+border:6px solid white;
 
 }
 
@@ -102,8 +104,8 @@ header {
 
 header h1 {
 
-    font-size:55px;
-    margin:25px 0 15px;
+font-size:55px;
+margin:25px 0 15px;
 
 }
 
@@ -111,12 +113,8 @@ header h1 {
 
 header h2 {
 
-    font-size:25px;
-    font-weight:normal;
-
-    max-width:750px;
-
-    margin:auto;
+font-size:25px;
+font-weight:normal;
 
 }
 
@@ -124,30 +122,27 @@ header h2 {
 
 header p {
 
-    font-size:22px;
-
-    margin:25px;
+font-size:22px;
 
 }
-
 
 
 
 button {
 
-    background:#2563eb;
+background:#2563eb;
+color:white;
 
-    color:white;
+border:none;
 
-    border:none;
+padding:15px 35px;
 
-    padding:15px 35px;
+border-radius:10px;
 
-    border-radius:10px;
-
-    font-size:17px;
+font-size:17px;
 
 }
+
 
 
 
@@ -157,15 +152,15 @@ button {
 
 section {
 
-    max-width:900px;
+max-width:900px;
 
-    margin:50px auto;
+margin:50px auto;
 
-    background:white;
+background:white;
 
-    padding:40px;
+padding:40px;
 
-    border-radius:18px;
+border-radius:18px;
 
 }
 
@@ -173,53 +168,91 @@ section {
 
 h2 {
 
-    color:#1f2937;
+color:#1f2937;
 
-    font-size:30px;
+font-size:30px;
 
 }
 
 
+
+
+
+/* Gallery */
+
+
+.gallery {
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+}
+
+
+
+.photo {
+
+overflow:hidden;
+
+border-radius:15px;
+
+background:#f1f5f9;
+
+}
+
+
+
+.photo img {
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+transition:0.4s;
+
+}
+
+
+
+.photo img:hover {
+
+transform:scale(1.05);
+
+}
+
+
+
+.caption {
+
+padding:15px;
+
+text-align:center;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+/* Cards */
 
 
 .card {
 
-    background:#f1f5f9;
+background:#f1f5f9;
 
-    padding:25px;
+padding:25px;
 
-    margin-top:20px;
+margin-top:20px;
 
-    border-radius:12px;
-
-}
-
-
-
-/* Skills */
-
-
-.skills {
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:20px;
-
-}
-
-
-
-.skill {
-
-    background:#f1f5f9;
-
-    padding:20px;
-
-    border-radius:12px;
-
-    text-align:center;
+border-radius:12px;
 
 }
 
@@ -227,22 +260,20 @@ h2 {
 
 
 
-/* Timeline */
+/* Social */
 
 
-.timeline {
+.social a {
 
-    border-left:4px solid #2563eb;
+display:inline-block;
 
-    padding-left:25px;
+margin:10px;
 
-}
+color:#2563eb;
 
+font-weight:bold;
 
-
-.timeline-item {
-
-    margin-bottom:30px;
+text-decoration:none;
 
 }
 
@@ -252,11 +283,11 @@ h2 {
 
 footer {
 
-    text-align:center;
+text-align:center;
 
-    padding:30px;
+padding:30px;
 
-    color:#666;
+color:#666;
 
 }
 
@@ -267,25 +298,25 @@ footer {
 @media(max-width:600px){
 
 
-.skills {
+.gallery {
 
-    grid-template-columns:1fr;
+grid-template-columns:1fr;
 
 }
 
 
 header h1 {
 
-    font-size:36px;
+font-size:36px;
 
 }
 
 
 section {
 
-    margin:20px;
+margin:20px;
 
-    padding:25px;
+padding:25px;
 
 }
 
@@ -301,6 +332,7 @@ section {
 
 
 
+
 <body>
 
 
@@ -309,14 +341,13 @@ section {
 
 <a href="#about">About</a>
 
-<a href="#journey">Journey</a>
+<a href="#gallery">Gallery</a>
 
-<a href="#skills">Skills</a>
+<a href="#journey">Journey</a>
 
 <a href="#contact">Contact</a>
 
 </nav>
-
 
 
 
@@ -338,22 +369,22 @@ Exploring Ideas. Connecting People. Creating Possibilities.
 
 
 <p>
-A personal journey of experiences, growth and discovery.
+A personal journey of experiences and discoveries.
 </p>
-
 
 
 <a href="#about">
 
 <button>
+
 Discover More
+
 </button>
 
 </a>
 
 
 </header>
-
 
 
 
@@ -371,13 +402,94 @@ Discover More
 
 I believe every experience creates a new perspective.
 
-Through learning, travel and connecting with people from different backgrounds,
+Through travel, learning and connecting with people,
 I continue to explore new ideas and opportunities.
 
-This website is a collection of my journey,
-experiences and moments that inspire me.
-
 </p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="gallery">
+
+
+<h2>My Gallery</h2>
+
+
+<div class="gallery">
+
+
+
+<div class="photo">
+
+<img src="travel1.jpg">
+
+<div class="caption">
+
+Travel Experience
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="photo">
+
+<img src="travel2.jpg">
+
+<div class="caption">
+
+World Exploration
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="photo">
+
+<img src="life1.jpg">
+
+<div class="caption">
+
+Lifestyle Moments
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="photo">
+
+<img src="project1.jpg">
+
+<div class="caption">
+
+Professional Projects
+
+</div>
+
+</div>
+
+
+
+</div>
 
 
 </section>
@@ -396,131 +508,37 @@ experiences and moments that inspire me.
 
 
 
-<div class="timeline">
+<div class="card">
 
-
-<div class="timeline-item">
 
 <h3>2026</h3>
 
 <p>
-Exploring new projects, ideas and opportunities.
+
+Exploring new opportunities and creating new experiences.
+
 </p>
 
-</div>
-
-
-
-<div class="timeline-item">
-
-<h3>Recent Years</h3>
-
-<p>
-Growing through experiences, challenges and discoveries.
-</p>
 
 </div>
 
 
-
-<div class="timeline-item">
-
-<h3>Early Journey</h3>
-
-<p>
-Building knowledge, skills and valuable relationships.
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section id="skills">
-
-
-<h2>What I Value</h2>
-
-
-
-<div class="skills">
-
-
-<div class="skill">
-
-🌎 Travel & Culture
-
-</div>
-
-
-<div class="skill">
-
-💡 Innovation & Learning
-
-</div>
-
-
-<div class="skill">
-
-🤝 Connections & Communication
-
-</div>
-
-
-<div class="skill">
-
-📚 Personal Growth
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section>
-
-
-<h2>My Philosophy</h2>
 
 
 <div class="card">
 
 
+<h3>Recent Years</h3>
+
 <p>
 
-Stay curious.
-
-Keep learning.
-
-Create meaningful experiences.
-
-Connect with people and the world.
+Growing through challenges, learning and connections.
 
 </p>
 
 
 </div>
+
 
 
 </section>
@@ -535,7 +553,7 @@ Connect with people and the world.
 <section id="contact">
 
 
-<h2>Contact</h2>
+<h2>Connect With Me</h2>
 
 
 <p>
@@ -545,11 +563,26 @@ Email: your@email.com
 </p>
 
 
-<button>
 
-Contact Me
+<div class="social">
 
-</button>
+<a href="#">
+LinkedIn
+</a>
+
+
+<a href="#">
+Instagram
+</a>
+
+
+<a href="#">
+GitHub
+</a>
+
+
+</div>
+
 
 
 </section>
@@ -567,6 +600,8 @@ Contact Me
 
 
 </footer>
+
+
 
 
 
