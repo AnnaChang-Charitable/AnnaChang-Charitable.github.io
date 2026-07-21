@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Anna Chang</title>
+
 
 <style>
 
@@ -16,155 +18,267 @@ body {
     color: #333;
 }
 
+
+/* Top Section */
+
 header {
+
     background: #1f2937;
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
+
 }
 
-<header>
 
-<img src="profile.jpg" class="profile">
+.profile {
 
-<h1>Anna Chang</h1>
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
 
-<p>Personal Website</p>
 }
+
+
+header h1 {
+
+    font-size:42px;
+    margin:20px 0 10px;
+
+}
+
 
 header p {
-    font-size: 20px;
+
+    font-size:20px;
+
 }
+
+
+/* Content */
 
 section {
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
+
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+
 }
+
 
 h2 {
-    color: #1f2937;
+
+    color:#1f2937;
+    font-size:28px;
+
 }
+
+
 
 .card {
-    margin-top: 20px;
-    padding: 20px;
-    background: #f1f5f9;
-    border-radius: 10px;
+
+    margin-top:20px;
+    padding:20px;
+    background:#f1f5f9;
+    border-radius:10px;
+
 }
 
-footer {
-    text-align:center;
-    padding:30px;
-    color:#666;
-}
+
+/* Button */
 
 button {
+
     background:#2563eb;
     color:white;
     border:none;
     padding:12px 25px;
     border-radius:8px;
     font-size:16px;
+    cursor:pointer;
+
 }
-.profile {
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid white;
+
+
+/* Footer */
+
+footer {
+
+    text-align:center;
+    padding:30px;
+    color:#666;
+
 }
-    
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    header h1 {
+
+        font-size:32px;
+
+    }
+
+
+    section {
+
+        margin:20px;
+        padding:25px;
+
+    }
+
+}
+
+
 </style>
 
+
 </head>
+
 
 
 <body>
 
 
+
 <header>
+
+
+<img src="profile.jpg" class="profile">
+
 
 <h1>Anna Chang</h1>
 
+
 <p>Personal Website</p>
+
 
 <p>
 Welcome to my personal space
 </p>
 
+
 </header>
 
 
 
+
 <section>
+
 
 <h2>About Me</h2>
 
+
 <p>
-Welcome to my website. 
-I enjoy learning, exploring new ideas, and connecting with people around the world.
+
+Welcome to my website.
+I enjoy learning, exploring new ideas, traveling,
+and connecting with people around the world.
+
 </p>
+
 
 </section>
 
 
 
+
+
 <section>
+
 
 <h2>My Experience</h2>
 
 
+
 <div class="card">
+
 
 <h3>Professional Journey</h3>
 
+
 <p>
-Here you can introduce your background, skills and achievements.
+
+Here you can introduce your professional background,
+skills, achievements and experience.
+
 </p>
 
+
 </div>
+
+
+
 
 
 <div class="card">
 
+
 <h3>My Interests</h3>
 
+
 <p>
+
 Travel, technology, lifestyle and personal growth.
+
 </p>
+
 
 </div>
 
 
+
 </section>
+
+
+
 
 
 
 <section>
 
+
 <h2>Contact</h2>
 
+
 <p>
+
 Email: your@email.com
+
 </p>
 
+
+
 <button>
+
 Contact Me
+
 </button>
 
 
+
 </section>
+
+
 
 
 
 <footer>
 
+
 © 2026 Anna Chang
 
+
 </footer>
+
+
 
 
 </body>
