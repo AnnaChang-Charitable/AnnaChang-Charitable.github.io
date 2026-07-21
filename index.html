@@ -13,14 +13,14 @@
 
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 
 body {
 
     margin:0;
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
     background:#f5f7fa;
     color:#333;
 
@@ -104,7 +104,6 @@ header {
 header h1 {
 
     font-size:55px;
-
     margin:25px 0 15px;
 
 }
@@ -114,12 +113,7 @@ header h1 {
 header h2 {
 
     font-size:26px;
-
     font-weight:normal;
-
-    max-width:750px;
-
-    margin:20px auto;
 
 }
 
@@ -133,13 +127,9 @@ header p {
 
 
 
-
-
 button {
 
-
     background:#2563eb;
-
     color:white;
 
     border:none;
@@ -149,16 +139,6 @@ button {
     border-radius:10px;
 
     font-size:17px;
-
-    cursor:pointer;
-
-}
-
-
-
-button:hover {
-
-    background:#1d4ed8;
 
 }
 
@@ -171,7 +151,6 @@ button:hover {
 
 section {
 
-
     max-width:900px;
 
     margin:50px auto;
@@ -182,49 +161,102 @@ section {
 
     border-radius:18px;
 
-
 }
 
 
 
 h2 {
 
-
     color:#1f2937;
 
     font-size:30px;
 
-
 }
 
+
+
+
+
+/* Cards */
 
 
 .card {
 
-
-    margin-top:20px;
+    background:#f1f5f9;
 
     padding:25px;
 
-    background:#f1f5f9;
+    margin-top:20px;
 
     border-radius:12px;
 
+}
+
+
+
+
+
+/* Gallery */
+
+
+.gallery {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
 
 }
+
+
+
+.gallery img {
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+}
+
+
+
+
+
+/* Timeline */
+
+
+.timeline {
+
+    border-left:4px solid #2563eb;
+
+    padding-left:25px;
+
+}
+
+
+
+.timeline-item {
+
+    margin-bottom:30px;
+
+}
+
 
 
 
 
 footer {
 
-
     text-align:center;
 
     padding:30px;
 
     color:#666;
-
 
 }
 
@@ -234,28 +266,20 @@ footer {
 
 /* Mobile */
 
+
 @media(max-width:600px){
+
+
+.gallery {
+
+    grid-template-columns:1fr;
+
+}
 
 
 header h1 {
 
     font-size:36px;
-
-}
-
-
-header h2 {
-
-    font-size:20px;
-
-}
-
-
-nav a {
-
-    display:inline-block;
-
-    margin:8px;
 
 }
 
@@ -275,7 +299,6 @@ section {
 
 </style>
 
-
 </head>
 
 
@@ -284,18 +307,19 @@ section {
 
 
 
+
 <nav>
 
 <a href="#about">About</a>
 
-<a href="#experience">Experience</a>
+<a href="#journey">Journey</a>
 
-<a href="#interests">Interests</a>
+<a href="#gallery">Gallery</a>
 
 <a href="#contact">Contact</a>
 
-
 </nav>
+
 
 
 
@@ -325,16 +349,14 @@ Welcome to my personal journey.
 <a href="#about">
 
 <button>
-
 Discover More
-
 </button>
 
 </a>
 
 
-
 </header>
+
 
 
 
@@ -352,8 +374,8 @@ Discover More
 
 Welcome to my personal website.
 
-I enjoy learning new things, exploring different cultures,
-and creating meaningful connections with people around the world.
+I enjoy learning, exploring cultures,
+meeting interesting people and creating meaningful experiences.
 
 </p>
 
@@ -366,25 +388,52 @@ and creating meaningful connections with people around the world.
 
 
 
-<section id="experience">
+<section id="journey">
 
 
-<h2>My Experience</h2>
+<h2>My Journey</h2>
 
 
 
-<div class="card">
+<div class="timeline">
 
 
-<h3>Professional Journey</h3>
+<div class="timeline-item">
 
+<h3>2026</h3>
 
 <p>
-
-Here you can share your professional background,
-skills, achievements and important milestones.
-
+Current projects and new opportunities.
 </p>
+
+</div>
+
+
+
+
+<div class="timeline-item">
+
+<h3>2024</h3>
+
+<p>
+New experiences and personal growth.
+</p>
+
+</div>
+
+
+
+
+
+<div class="timeline-item">
+
+<h3>Earlier Years</h3>
+
+<p>
+Building knowledge, skills and experiences.
+</p>
+
+</div>
 
 
 </div>
@@ -398,71 +447,38 @@ skills, achievements and important milestones.
 
 
 
-<section id="interests">
+
+<section id="gallery">
 
 
-<h2>My Interests</h2>
-
-
-
-
-<div class="card">
-
-
-<h3>Travel</h3>
-
-
-<p>
-
-Discovering new places and experiencing different cultures.
-
-</p>
-
-
-</div>
+<h2>My Gallery</h2>
 
 
 
+<div class="gallery">
 
 
-<div class="card">
+<img src="profile.jpg">
 
 
-<h3>Technology</h3>
+<img src="profile.jpg">
 
 
-<p>
-
-Exploring innovation and digital creativity.
-
-</p>
+<img src="profile.jpg">
 
 
 </div>
 
 
 
-
-
-<div class="card">
-
-
-<h3>Personal Growth</h3>
-
-
 <p>
 
-Always learning, improving and exploring new possibilities.
+More photos coming soon.
 
 </p>
-
-
-</div>
-
 
 
 </section>
-
 
 
 
@@ -482,7 +498,6 @@ Always learning, improving and exploring new possibilities.
 Email: your@email.com
 
 </p>
-
 
 
 <button>
