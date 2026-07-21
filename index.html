@@ -7,12 +7,15 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 <title>Anna Chang | AC Personal Brand</title>
 
 
 <meta name="description" content="Anna Chang personal website. Exploring ideas, connecting people and creating possibilities.">
 
+
 <meta name="author" content="Anna Chang">
+
 
 
 <style>
@@ -23,6 +26,7 @@ html {
 scroll-behavior:smooth;
 
 }
+
 
 
 body {
@@ -38,7 +42,6 @@ color:#333;
 }
 
 
-/* Navigation */
 
 
 nav {
@@ -60,6 +63,7 @@ box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 
+
 nav a {
 
 color:#1f2937;
@@ -73,6 +77,7 @@ font-weight:bold;
 }
 
 
+
 nav a:hover {
 
 color:#2563eb;
@@ -83,16 +88,17 @@ color:#2563eb;
 
 
 
-/* Hero */
-
-
 header {
+
 
 background:
 
 linear-gradient(
+
 rgba(15,23,42,0.8),
+
 rgba(15,23,42,0.8)
+
 ),
 
 url("profile.jpg");
@@ -108,6 +114,7 @@ color:white;
 text-align:center;
 
 padding:110px 20px;
+
 
 }
 
@@ -159,6 +166,7 @@ margin-top:30px;
 
 
 
+
 header h1 {
 
 font-size:55px;
@@ -191,7 +199,10 @@ font-size:22px;
 
 
 
+
+
 button {
+
 
 background:#2563eb;
 
@@ -205,16 +216,25 @@ border-radius:10px;
 
 font-size:17px;
 
+cursor:pointer;
+
+
+}
+
+
+button:hover {
+
+background:#1d4ed8;
+
 }
 
 
 
 
 
-/* Sections */
-
 
 section {
+
 
 max-width:900px;
 
@@ -228,7 +248,9 @@ border-radius:18px;
 
 box-shadow:0 5px 20px rgba(0,0,0,0.05);
 
+
 }
+
 
 
 h2 {
@@ -240,7 +262,10 @@ font-size:30px;
 }
 
 
+
+
 .card {
+
 
 background:#f1f5f9;
 
@@ -250,14 +275,14 @@ margin-top:20px;
 
 border-radius:12px;
 
+
 }
 
 
 
-/* Gallery */
-
 
 .gallery {
+
 
 display:grid;
 
@@ -265,19 +290,25 @@ grid-template-columns:repeat(2,1fr);
 
 gap:25px;
 
+
 }
 
 
+
 .photo {
+
 
 overflow:hidden;
 
 border-radius:15px;
 
+
 }
 
 
+
 .photo img {
+
 
 width:100%;
 
@@ -287,17 +318,23 @@ object-fit:cover;
 
 transition:0.4s;
 
+
 }
+
 
 
 .photo img:hover {
 
+
 transform:scale(1.08);
+
 
 }
 
 
+
 .caption {
+
 
 padding:15px;
 
@@ -307,46 +344,95 @@ font-weight:bold;
 
 background:#f1f5f9;
 
+
+}
+
+/* Form */
+
+
+form label {
+
+font-weight:bold;
+
 }
 
 
 
+input, textarea {
 
-/* Social */
+
+width:90%;
+
+
+padding:15px;
+
+
+border-radius:8px;
+
+
+border:1px solid #ddd;
+
+
+font-size:16px;
+
+
+font-family:Arial;
+
+
+}
+
+
+
+textarea {
+
+
+resize:none;
+
+
+}
+
+
+
 
 
 .social a {
 
+
 display:inline-block;
+
 
 margin:10px;
 
+
 color:#2563eb;
+
 
 font-weight:bold;
 
+
 text-decoration:none;
 
-}
 
+}
 
 
 
 
 footer {
 
+
 text-align:center;
+
 
 padding:40px;
 
+
 color:#666;
+
 
 }
 
 
-
-
-/* Mobile */
 
 
 @media(max-width:600px){
@@ -354,7 +440,9 @@ color:#666;
 
 .gallery {
 
+
 grid-template-columns:1fr;
+
 
 }
 
@@ -362,16 +450,22 @@ grid-template-columns:1fr;
 
 header h1 {
 
+
 font-size:36px;
+
 
 }
 
 
+
 section {
+
 
 margin:20px;
 
+
 padding:25px;
+
 
 }
 
@@ -397,43 +491,19 @@ padding:25px;
 <nav>
 
 
-<a href="#about">
-
-About
-
-</a>
+<a href="#about">About</a>
 
 
-
-<a href="#gallery">
-
-Gallery
-
-</a>
+<a href="#gallery">Gallery</a>
 
 
-
-<a href="#journey">
-
-Journey
-
-</a>
+<a href="#journey">Journey</a>
 
 
-
-<a href="#map">
-
-Map
-
-</a>
+<a href="#map">Map</a>
 
 
-
-<a href="#contact">
-
-Contact
-
-</a>
+<a href="#contact">Contact</a>
 
 
 
@@ -516,7 +586,6 @@ About Me
 </h2>
 
 
-
 <p>
 
 I believe every experience creates a new perspective.
@@ -549,16 +618,13 @@ My Gallery
 </h2>
 
 
-
 <div class="gallery">
 
 
 
 <div class="photo">
 
-
 <img src="travel1.jpg">
-
 
 <div class="caption">
 
@@ -566,18 +632,14 @@ Travel Experience
 
 </div>
 
-
 </div>
-
 
 
 
 
 <div class="photo">
 
-
 <img src="travel2.jpg">
-
 
 <div class="caption">
 
@@ -585,7 +647,6 @@ World Exploration
 
 </div>
 
-
 </div>
 
 
@@ -594,9 +655,7 @@ World Exploration
 
 <div class="photo">
 
-
 <img src="life1.jpg">
-
 
 <div class="caption">
 
@@ -604,7 +663,6 @@ Lifestyle Moments
 
 </div>
 
-
 </div>
 
 
@@ -613,16 +671,13 @@ Lifestyle Moments
 
 <div class="photo">
 
-
 <img src="project1.jpg">
-
 
 <div class="caption">
 
 Professional Projects
 
 </div>
-
 
 </div>
 
@@ -653,8 +708,8 @@ My Journey
 
 
 
-<div class="card">
 
+<div class="card">
 
 <h3>
 
@@ -671,6 +726,7 @@ Exploring new projects, opportunities and experiences.
 
 
 </div>
+
 
 
 
@@ -696,6 +752,7 @@ Learning, growing and building meaningful connections.
 
 
 
+
 <div class="card">
 
 
@@ -714,6 +771,7 @@ Continuing to explore possibilities and create value.
 
 
 </div>
+
 
 
 
@@ -762,7 +820,6 @@ Exploring different cities, cultures and experiences across America.
 
 
 
-
 <div class="card">
 
 
@@ -781,7 +838,6 @@ Discovering new perspectives, traditions and connections.
 
 
 </div>
-
 
 
 
@@ -837,11 +893,100 @@ I would love to hear from you.
 
 
 
-<p>
 
-Email: your@email.com
+<form action="https://formspree.io/f/mqerlwpo" method="POST">
 
-</p>
+
+
+<label>
+
+Name
+
+</label>
+
+
+<br>
+
+
+<input 
+type="text" 
+name="name"
+placeholder="Your Name"
+required>
+
+
+<br><br>
+
+
+
+
+
+<label>
+
+Email
+
+</label>
+
+
+<br>
+
+
+
+<input 
+type="email"
+name="email"
+placeholder="Your Email"
+required>
+
+
+<br><br>
+
+
+
+
+
+<label>
+
+Message
+
+</label>
+
+
+<br>
+
+
+
+<textarea
+
+name="message"
+
+rows="6"
+
+placeholder="Your Message"
+
+required>
+
+</textarea>
+
+
+<br><br>
+
+
+
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+
+
+</form>
+
+
+
+
 
 
 
@@ -856,13 +1001,11 @@ LinkedIn
 </a>
 
 
-
 <a href="#">
 
 Instagram
 
 </a>
-
 
 
 <a href="#">
@@ -872,8 +1015,8 @@ GitHub
 </a>
 
 
-
 </div>
+
 
 
 </section>
@@ -903,7 +1046,9 @@ AC Personal Brand | Exploring Ideas & Creating Connections
 </p>
 
 
+
 </footer>
+
 
 
 
