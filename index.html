@@ -14,8 +14,10 @@
 <link rel="icon" type="image/png" href="ac-logo.png">
 
 
+<meta name="author" content="Anna Chang">
 
-<meta name="keywords" content="Anna Chang, personal brand, travel, projects, professional profile">
+
+<meta name="keywords" content="Anna Chang, personal brand, travel, lifestyle, projects">
 
 
 <meta name="description" content="Anna Chang personal website. Exploring ideas, connecting people and creating possibilities.">
@@ -24,9 +26,7 @@
 
 <meta property="og:title" content="Anna Chang | AC Personal Brand">
 
-
 <meta property="og:description" content="Exploring Ideas. Connecting People. Creating Possibilities.">
-
 
 <meta property="og:image" content="ac-logo.png">
 
@@ -36,12 +36,10 @@
 
 <!-- Google Analytics -->
 
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXWHQVJS2N"></script>
 
 
 <script>
-
 
 window.dataLayer = window.dataLayer || [];
 
@@ -56,7 +54,7 @@ dataLayer.push(arguments);
 gtag('js', new Date());
 
 
-gtag('config', 'G-DXWHQVJS2N');
+gtag('config','G-DXWHQVJS2N');
 
 
 </script>
@@ -66,6 +64,14 @@ gtag('config', 'G-DXWHQVJS2N');
 
 
 <style>
+
+
+* {
+
+box-sizing:border-box;
+
+}
+
 
 
 html {
@@ -92,7 +98,11 @@ background:#f5f7fa;
 color:#333;
 
 
+line-height:1.6;
+
+
 }
+
 
 
 
@@ -146,6 +156,7 @@ font-weight:bold;
 
 
 
+
 nav a:hover {
 
 
@@ -159,6 +170,7 @@ color:#2563eb;
 
 
 
+
 header {
 
 
@@ -166,9 +178,9 @@ background:
 
 linear-gradient(
 
-rgba(15,23,42,0.8),
+rgba(15,23,42,.8),
 
-rgba(15,23,42,0.8)
+rgba(15,23,42,.8)
 
 ),
 
@@ -182,16 +194,17 @@ background-size:cover;
 background-position:center;
 
 
-color:white;
-
-
 text-align:center;
 
 
-padding:110px 20px;
+color:white;
+
+
+padding:100px 20px;
 
 
 }
+
 
 
 
@@ -207,7 +220,7 @@ width:90px;
 height:90px;
 
 
-background:white;
+margin:auto;
 
 
 border-radius:50%;
@@ -216,10 +229,11 @@ border-radius:50%;
 overflow:hidden;
 
 
-margin:auto;
+background:white;
 
 
 }
+
 
 
 
@@ -237,6 +251,9 @@ object-fit:cover;
 
 
 }
+
+
+
 
 
 
@@ -273,7 +290,7 @@ header h1 {
 font-size:55px;
 
 
-margin:25px 0 15px;
+margin:25px 0;
 
 
 }
@@ -301,7 +318,6 @@ margin:auto;
 
 
 
-
 header p {
 
 
@@ -309,6 +325,8 @@ font-size:22px;
 
 
 }
+
+
 
 
 
@@ -374,7 +392,7 @@ padding:40px;
 border-radius:18px;
 
 
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
+box-shadow:0 5px 20px rgba(0,0,0,.05);
 
 
 }
@@ -397,7 +415,6 @@ font-size:30px;
 
 
 
-
 .card {
 
 
@@ -414,6 +431,7 @@ border-radius:12px;
 
 
 }
+
 
 
 
@@ -449,8 +467,6 @@ border-radius:15px;
 
 
 
-
-
 .photo img {
 
 
@@ -463,10 +479,11 @@ height:250px;
 object-fit:cover;
 
 
-transition:0.4s;
+transition:.4s;
 
 
 }
+
 
 
 
@@ -477,7 +494,6 @@ transform:scale(1.08);
 
 
 }
-
 
 
 
@@ -536,7 +552,9 @@ font-family:Arial;
 
 textarea {
 
+
 resize:none;
+
 
 }
 
@@ -563,6 +581,7 @@ margin-top:25px;
 
 
 
+
 footer {
 
 
@@ -581,18 +600,7 @@ color:#666;
 
 
 
-@media(max-width:600px){
-
-
-.gallery {
-
-
-grid-template-columns:1fr;
-
-
-}
-
-
+@media(max-width:700px){
 
 
 header h1 {
@@ -604,6 +612,24 @@ font-size:36px;
 }
 
 
+
+header h2 {
+
+
+font-size:21px;
+
+
+}
+
+
+
+header p {
+
+
+font-size:18px;
+
+
+}
 
 
 
@@ -620,7 +646,44 @@ padding:25px;
 
 
 
+
+.gallery {
+
+
+grid-template-columns:1fr;
+
+
 }
+
+
+
+.profile {
+
+
+width:140px;
+
+
+height:140px;
+
+
+}
+
+
+
+nav a {
+
+
+display:inline-block;
+
+
+margin:6px;
+
+
+}
+
+
+}
+
 
 
 
@@ -628,6 +691,8 @@ padding:25px;
 
 
 </head>
+
+
 
 
 
@@ -670,10 +735,11 @@ padding:25px;
 <header>
 
 
+
 <div class="logo">
 
 
-<img src="ac-logo.png">
+<img loading="lazy" src="ac-logo.png">
 
 
 </div>
@@ -681,7 +747,7 @@ padding:25px;
 
 
 
-<img src="profile.jpg" class="profile">
+<img loading="lazy" src="profile.jpg" class="profile">
 
 
 
@@ -696,6 +762,7 @@ Anna Chang
 
 
 
+
 <h2>
 
 Exploring Ideas. Connecting People. Creating Possibilities.
@@ -705,11 +772,13 @@ Exploring Ideas. Connecting People. Creating Possibilities.
 
 
 
+
 <p>
 
 A personal brand built through experiences, learning and connections.
 
 </p>
+
 
 
 
@@ -783,13 +852,19 @@ My Gallery
 
 
 
+
+
 <div class="gallery">
+
+
 
 
 
 <div class="photo">
 
-<img src="travel1.jpg">
+
+<img loading="lazy" src="travel1.jpg">
+
 
 <div class="caption">
 
@@ -797,14 +872,19 @@ Travel Experience
 
 </div>
 
+
 </div>
+
+
 
 
 
 
 <div class="photo">
 
-<img src="travel2.jpg">
+
+<img loading="lazy" src="travel2.jpg">
+
 
 <div class="caption">
 
@@ -812,7 +892,9 @@ World Exploration
 
 </div>
 
+
 </div>
+
 
 
 
@@ -820,7 +902,9 @@ World Exploration
 
 <div class="photo">
 
-<img src="life1.jpg">
+
+<img loading="lazy" src="life1.jpg">
+
 
 <div class="caption">
 
@@ -828,7 +912,9 @@ Lifestyle Moments
 
 </div>
 
+
 </div>
+
 
 
 
@@ -836,7 +922,9 @@ Lifestyle Moments
 
 <div class="photo">
 
-<img src="project1.jpg">
+
+<img loading="lazy" src="project1.jpg">
+
 
 <div class="caption">
 
@@ -844,7 +932,9 @@ Professional Projects
 
 </div>
 
+
 </div>
+
 
 
 
@@ -895,6 +985,7 @@ Exploring new projects, opportunities and experiences.
 
 
 
+
 <div class="card">
 
 
@@ -913,6 +1004,7 @@ Learning, growing and building meaningful connections.
 
 
 </div>
+
 
 
 
@@ -982,7 +1074,6 @@ Exploring different cities, cultures and experiences across America.
 
 
 
-
 <div class="card">
 
 
@@ -1001,7 +1092,6 @@ Discovering new perspectives, traditions and connections.
 
 
 </div>
-
 
 
 
@@ -1058,6 +1148,7 @@ I would love to hear from you.
 
 
 
+
 <h3>
 
 📞 Call
@@ -1071,6 +1162,7 @@ I would love to hear from you.
 +1 (555) 123-4567
 
 </p>
+
 
 
 
@@ -1108,6 +1200,7 @@ Call Me
 
 
 
+
 <form action="https://formspree.io/f/mqerlwpo" method="POST">
 
 
@@ -1120,7 +1213,6 @@ Name
 
 
 <br>
-
 
 
 
@@ -1141,6 +1233,7 @@ required>
 
 
 
+
 <label>
 
 Email
@@ -1149,7 +1242,6 @@ Email
 
 
 <br>
-
 
 
 
@@ -1170,6 +1262,7 @@ required>
 
 
 
+
 <label>
 
 Message
@@ -1178,7 +1271,6 @@ Message
 
 
 <br>
-
 
 
 
@@ -1201,6 +1293,7 @@ required>
 
 
 
+
 <button type="submit">
 
 Send Message
@@ -1209,7 +1302,9 @@ Send Message
 
 
 
+
 </form>
+
 
 
 
@@ -1229,6 +1324,7 @@ I look forward to connecting with you.
 
 
 </div>
+
 
 
 
@@ -1253,17 +1349,14 @@ I look forward to connecting with you.
 
 
 
-
 <p>
 
-AC Personal Brand | Exploring Ideas & Creating Connections
+AC Personal Brand | All Rights Reserved.
 
 </p>
 
 
-
 </footer>
-
 
 
 
