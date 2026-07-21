@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Anna Chang</title>
+<title>Anna Chang | Personal Website</title>
 
 
 <style>
@@ -27,8 +27,8 @@ body {
 }
 
 
-
 /* Navigation */
+
 
 nav {
 
@@ -61,8 +61,8 @@ nav a:hover {
 
 
 
-
 /* Hero */
+
 
 header {
 
@@ -72,7 +72,6 @@ header {
     rgba(31,41,55,0.75)
     ),
     url("profile.jpg");
-
 
     background-size:cover;
     background-position:center;
@@ -112,8 +111,12 @@ header h1 {
 
 header h2 {
 
-    font-size:26px;
+    font-size:25px;
     font-weight:normal;
+
+    max-width:750px;
+
+    margin:auto;
 
 }
 
@@ -123,13 +126,17 @@ header p {
 
     font-size:22px;
 
+    margin:25px;
+
 }
+
 
 
 
 button {
 
     background:#2563eb;
+
     color:white;
 
     border:none;
@@ -141,7 +148,6 @@ button {
     font-size:17px;
 
 }
-
 
 
 
@@ -176,10 +182,6 @@ h2 {
 
 
 
-
-/* Cards */
-
-
 .card {
 
     background:#f1f5f9;
@@ -194,16 +196,14 @@ h2 {
 
 
 
+/* Skills */
 
 
-/* Gallery */
-
-
-.gallery {
+.skills {
 
     display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
 
     gap:20px;
 
@@ -211,15 +211,15 @@ h2 {
 
 
 
-.gallery img {
+.skill {
 
-    width:100%;
+    background:#f1f5f9;
 
-    height:200px;
-
-    object-fit:cover;
+    padding:20px;
 
     border-radius:12px;
+
+    text-align:center;
 
 }
 
@@ -264,13 +264,10 @@ footer {
 
 
 
-/* Mobile */
-
-
 @media(max-width:600px){
 
 
-.gallery {
+.skills {
 
     grid-template-columns:1fr;
 
@@ -299,12 +296,12 @@ section {
 
 </style>
 
+
 </head>
 
 
 
 <body>
-
 
 
 
@@ -314,7 +311,7 @@ section {
 
 <a href="#journey">Journey</a>
 
-<a href="#gallery">Gallery</a>
+<a href="#skills">Skills</a>
 
 <a href="#contact">Contact</a>
 
@@ -341,7 +338,7 @@ Exploring Ideas. Connecting People. Creating Possibilities.
 
 
 <p>
-Welcome to my personal journey.
+A personal journey of experiences, growth and discovery.
 </p>
 
 
@@ -372,15 +369,19 @@ Discover More
 
 <p>
 
-Welcome to my personal website.
+I believe every experience creates a new perspective.
 
-I enjoy learning, exploring cultures,
-meeting interesting people and creating meaningful experiences.
+Through learning, travel and connecting with people from different backgrounds,
+I continue to explore new ideas and opportunities.
+
+This website is a collection of my journey,
+experiences and moments that inspire me.
 
 </p>
 
 
 </section>
+
 
 
 
@@ -403,35 +404,84 @@ meeting interesting people and creating meaningful experiences.
 <h3>2026</h3>
 
 <p>
-Current projects and new opportunities.
+Exploring new projects, ideas and opportunities.
 </p>
 
 </div>
 
 
 
-
 <div class="timeline-item">
 
-<h3>2024</h3>
+<h3>Recent Years</h3>
 
 <p>
-New experiences and personal growth.
+Growing through experiences, challenges and discoveries.
 </p>
 
 </div>
 
 
 
-
-
 <div class="timeline-item">
 
-<h3>Earlier Years</h3>
+<h3>Early Journey</h3>
 
 <p>
-Building knowledge, skills and experiences.
+Building knowledge, skills and valuable relationships.
 </p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="skills">
+
+
+<h2>What I Value</h2>
+
+
+
+<div class="skills">
+
+
+<div class="skill">
+
+🌎 Travel & Culture
+
+</div>
+
+
+<div class="skill">
+
+💡 Innovation & Learning
+
+</div>
+
+
+<div class="skill">
+
+🤝 Connections & Communication
+
+</div>
+
+
+<div class="skill">
+
+📚 Personal Growth
 
 </div>
 
@@ -448,34 +498,29 @@ Building knowledge, skills and experiences.
 
 
 
-<section id="gallery">
+<section>
 
 
-<h2>My Gallery</h2>
+<h2>My Philosophy</h2>
 
 
-
-<div class="gallery">
-
-
-<img src="profile.jpg">
-
-
-<img src="profile.jpg">
-
-
-<img src="profile.jpg">
-
-
-</div>
-
+<div class="card">
 
 
 <p>
 
-More photos coming soon.
+Stay curious.
+
+Keep learning.
+
+Create meaningful experiences.
+
+Connect with people and the world.
 
 </p>
+
+
+</div>
 
 
 </section>
@@ -507,7 +552,6 @@ Contact Me
 </button>
 
 
-
 </section>
 
 
@@ -523,8 +567,6 @@ Contact Me
 
 
 </footer>
-
-
 
 
 
