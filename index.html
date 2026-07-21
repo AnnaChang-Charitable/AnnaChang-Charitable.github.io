@@ -30,7 +30,6 @@ body {
 
 /* Navigation */
 
-
 nav {
 
     background:white;
@@ -49,7 +48,6 @@ nav a {
     text-decoration:none;
     margin:0 15px;
     font-weight:bold;
-    font-size:16px;
 
 }
 
@@ -62,17 +60,19 @@ nav a:hover {
 
 
 
-/* Hero */
 
+
+/* Hero */
 
 header {
 
     background:
     linear-gradient(
-    rgba(31,41,55,0.8),
-    rgba(31,41,55,0.8)
+    rgba(31,41,55,0.75),
+    rgba(31,41,55,0.75)
     ),
     url("profile.jpg");
+
 
     background-size:cover;
     background-position:center;
@@ -80,7 +80,7 @@ header {
     color:white;
     text-align:center;
 
-    padding:90px 20px;
+    padding:100px 20px;
 
 }
 
@@ -88,10 +88,11 @@ header {
 
 .profile {
 
-    width:160px;
-    height:160px;
+    width:170px;
+    height:170px;
 
     border-radius:50%;
+
     object-fit:cover;
 
     border:6px solid white;
@@ -102,8 +103,23 @@ header {
 
 header h1 {
 
-    font-size:48px;
-    margin:25px 0 10px;
+    font-size:55px;
+
+    margin:25px 0 15px;
+
+}
+
+
+
+header h2 {
+
+    font-size:26px;
+
+    font-weight:normal;
+
+    max-width:750px;
+
+    margin:20px auto;
 
 }
 
@@ -119,55 +135,8 @@ header p {
 
 
 
-/* Sections */
-
-
-section {
-
-    max-width:900px;
-
-    margin:50px auto;
-
-    background:white;
-
-    padding:40px;
-
-    border-radius:18px;
-
-}
-
-
-
-h2 {
-
-    color:#1f2937;
-
-    font-size:30px;
-
-}
-
-
-
-.card {
-
-    margin-top:20px;
-
-    padding:25px;
-
-    background:#f1f5f9;
-
-    border-radius:12px;
-
-}
-
-
-
-
-
-/* Button */
-
-
 button {
+
 
     background:#2563eb;
 
@@ -175,11 +144,13 @@ button {
 
     border:none;
 
-    padding:14px 30px;
+    padding:15px 35px;
 
     border-radius:10px;
 
-    font-size:16px;
+    font-size:17px;
+
+    cursor:pointer;
 
 }
 
@@ -195,7 +166,58 @@ button:hover {
 
 
 
+/* Sections */
+
+
+section {
+
+
+    max-width:900px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:18px;
+
+
+}
+
+
+
+h2 {
+
+
+    color:#1f2937;
+
+    font-size:30px;
+
+
+}
+
+
+
+.card {
+
+
+    margin-top:20px;
+
+    padding:25px;
+
+    background:#f1f5f9;
+
+    border-radius:12px;
+
+
+}
+
+
+
+
 footer {
+
 
     text-align:center;
 
@@ -203,20 +225,28 @@ footer {
 
     color:#666;
 
+
 }
+
 
 
 
 
 /* Mobile */
 
-
 @media(max-width:600px){
 
 
 header h1 {
 
-    font-size:34px;
+    font-size:36px;
+
+}
+
+
+header h2 {
+
+    font-size:20px;
 
 }
 
@@ -271,6 +301,7 @@ section {
 
 
 
+
 <header>
 
 
@@ -280,12 +311,27 @@ section {
 <h1>Anna Chang</h1>
 
 
-<p>Personal Website</p>
+<h2>
+Exploring Ideas. Connecting People. Creating Possibilities.
+</h2>
 
 
 <p>
-Exploring ideas, experiences and connections around the world.
+Welcome to my personal journey.
 </p>
+
+
+
+<a href="#about">
+
+<button>
+
+Discover More
+
+</button>
+
+</a>
+
 
 
 </header>
@@ -307,7 +353,7 @@ Exploring ideas, experiences and connections around the world.
 Welcome to my personal website.
 
 I enjoy learning new things, exploring different cultures,
-and building meaningful connections with people around the world.
+and creating meaningful connections with people around the world.
 
 </p>
 
@@ -344,9 +390,7 @@ skills, achievements and important milestones.
 </div>
 
 
-
 </section>
-
 
 
 
@@ -358,6 +402,7 @@ skills, achievements and important milestones.
 
 
 <h2>My Interests</h2>
+
 
 
 
@@ -379,6 +424,7 @@ Discovering new places and experiencing different cultures.
 
 
 
+
 <div class="card">
 
 
@@ -387,12 +433,13 @@ Discovering new places and experiencing different cultures.
 
 <p>
 
-Learning about innovation and digital creativity.
+Exploring innovation and digital creativity.
 
 </p>
 
 
 </div>
+
 
 
 
@@ -405,7 +452,7 @@ Learning about innovation and digital creativity.
 
 <p>
 
-Always improving, learning and exploring new possibilities.
+Always learning, improving and exploring new possibilities.
 
 </p>
 
@@ -461,6 +508,7 @@ Contact Me
 
 
 </footer>
+
 
 
 
