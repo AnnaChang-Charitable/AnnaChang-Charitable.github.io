@@ -16,6 +16,7 @@
 <link rel="icon" type="image/png" href="ac-logo.png">
 
 
+
 <!-- SEO -->
 
 <meta name="keywords" content="Anna Chang, personal brand, travel, projects, professional profile">
@@ -23,13 +24,48 @@
 <meta name="description" content="Anna Chang personal website. Exploring ideas, connecting people and creating possibilities.">
 
 
-<!-- Social Sharing -->
+
+<!-- Social Preview -->
 
 <meta property="og:title" content="Anna Chang | AC Personal Brand">
 
 <meta property="og:description" content="Exploring Ideas. Connecting People. Creating Possibilities.">
 
 <meta property="og:image" content="ac-logo.png">
+
+
+
+
+
+<!-- Google Analytics -->
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXWHQVJS2N"></script>
+
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+
+function gtag(){
+
+dataLayer.push(arguments);
+
+}
+
+
+gtag('js', new Date());
+
+
+gtag('config', 'G-DXWHQVJS2N');
+
+
+</script>
+
+
+
+
 
 
 <style>
@@ -42,17 +78,24 @@ scroll-behavior:smooth;
 }
 
 
+
 body {
+
 
 margin:0;
 
+
 font-family:Arial, sans-serif;
+
 
 background:#f5f7fa;
 
+
 color:#333;
 
+
 }
+
 
 
 
@@ -61,42 +104,60 @@ color:#333;
 
 nav {
 
+
 background:white;
+
 
 padding:18px;
 
+
 text-align:center;
+
 
 position:sticky;
 
+
 top:0;
+
 
 z-index:100;
 
+
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
 
+
 }
+
 
 
 
 nav a {
 
+
 color:#1f2937;
+
 
 text-decoration:none;
 
+
 margin:0 12px;
+
 
 font-weight:bold;
 
+
 }
+
 
 
 nav a:hover {
 
+
 color:#2563eb;
 
+
 }
+
 
 
 
@@ -121,14 +182,18 @@ rgba(15,23,42,0.8)
 url("profile.jpg");
 
 
+
 background-size:cover;
+
 
 background-position:center;
 
 
 color:white;
 
+
 text-align:center;
+
 
 padding:110px 20px;
 
@@ -137,87 +202,130 @@ padding:110px 20px;
 
 
 
+
+
 .logo {
+
 
 width:90px;
 
+
 height:90px;
+
 
 background:white;
 
+
 border-radius:50%;
+
 
 display:flex;
 
+
 align-items:center;
+
 
 justify-content:center;
 
+
 margin:auto;
+
 
 overflow:hidden;
 
+
 }
+
+
 
 
 .logo img {
 
+
 width:100%;
+
 
 height:100%;
 
+
 object-fit:cover;
 
+
 }
+
+
+
 
 
 
 .profile {
 
+
 width:170px;
+
 
 height:170px;
 
+
 border-radius:50%;
+
 
 object-fit:cover;
 
+
 border:6px solid white;
+
 
 margin-top:30px;
 
+
 }
+
+
 
 
 
 
 header h1 {
 
+
 font-size:55px;
+
 
 margin:25px 0 15px;
 
+
 }
+
 
 
 
 header h2 {
 
+
 font-size:26px;
+
 
 font-weight:normal;
 
+
 max-width:750px;
 
+
 margin:auto;
+
 
 }
 
 
 
+
+
 header p {
 
+
 font-size:22px;
+
 
 }
 
@@ -230,15 +338,21 @@ button {
 
 background:#2563eb;
 
+
 color:white;
+
 
 border:none;
 
+
 padding:15px 35px;
+
 
 border-radius:10px;
 
+
 font-size:17px;
+
 
 cursor:pointer;
 
@@ -246,9 +360,12 @@ cursor:pointer;
 }
 
 
+
 button:hover {
 
+
 background:#1d4ed8;
+
 
 }
 
@@ -262,13 +379,18 @@ section {
 
 max-width:900px;
 
+
 margin:50px auto;
+
 
 background:white;
 
+
 padding:40px;
 
+
 border-radius:18px;
+
 
 box-shadow:0 5px 20px rgba(0,0,0,0.05);
 
@@ -277,11 +399,16 @@ box-shadow:0 5px 20px rgba(0,0,0,0.05);
 
 
 
+
+
 h2 {
+
 
 color:#1f2937;
 
+
 font-size:30px;
+
 
 }
 
@@ -290,72 +417,106 @@ font-size:30px;
 
 .card {
 
+
 background:#f1f5f9;
+
 
 padding:25px;
 
+
 margin-top:20px;
+
 
 border-radius:12px;
 
+
 }
+
+
 
 
 
 
 .gallery {
 
+
 display:grid;
+
 
 grid-template-columns:repeat(2,1fr);
 
+
 gap:25px;
 
+
 }
+
+
 
 
 
 .photo {
 
+
 overflow:hidden;
+
 
 border-radius:15px;
 
+
 }
+
+
 
 
 
 .photo img {
 
+
 width:100%;
+
 
 height:250px;
 
+
 object-fit:cover;
+
 
 transition:0.4s;
 
+
 }
+
+
 
 
 
 .photo img:hover {
 
+
 transform:scale(1.08);
+
 
 }
 
 
 
+
+
 .caption {
+
 
 padding:15px;
 
+
 text-align:center;
+
 
 font-weight:bold;
 
+
 background:#f1f5f9;
+
 
 }
 /* Contact */
@@ -366,7 +527,6 @@ form label {
 font-weight:bold;
 
 }
-
 
 
 input, textarea {
@@ -427,7 +587,6 @@ text-decoration:none;
 
 
 
-
 footer {
 
 
@@ -481,6 +640,7 @@ padding:25px;
 }
 
 
+
 }
 
 
@@ -489,6 +649,8 @@ padding:25px;
 
 
 </head>
+
+
 
 
 
@@ -505,11 +667,15 @@ padding:25px;
 
 <a href="#about">About</a>
 
+
 <a href="#gallery">Gallery</a>
+
 
 <a href="#journey">Journey</a>
 
+
 <a href="#map">Map</a>
+
 
 <a href="#contact">Contact</a>
 
@@ -530,7 +696,9 @@ padding:25px;
 
 <div class="logo">
 
+
 <img src="ac-logo.png">
+
 
 </div>
 
@@ -538,6 +706,8 @@ padding:25px;
 
 
 <img src="profile.jpg" class="profile">
+
+
 
 
 
@@ -549,11 +719,13 @@ Anna Chang
 
 
 
+
 <h2>
 
 Exploring Ideas. Connecting People. Creating Possibilities.
 
 </h2>
+
 
 
 
@@ -568,13 +740,16 @@ A personal brand built through experiences, learning and connections.
 
 <a href="#about">
 
+
 <button>
 
 Discover More
 
 </button>
 
+
 </a>
+
 
 
 </header>
@@ -598,6 +773,7 @@ About Me
 
 
 
+
 <p>
 
 I believe every experience creates a new perspective.
@@ -608,6 +784,7 @@ I continue to explore new ideas and opportunities.
 This website represents my journey, experiences and personal growth.
 
 </p>
+
 
 
 </section>
@@ -631,12 +808,18 @@ My Gallery
 
 
 
+
 <div class="gallery">
+
+
+
 
 
 <div class="photo">
 
+
 <img src="travel1.jpg">
+
 
 <div class="caption">
 
@@ -644,14 +827,18 @@ Travel Experience
 
 </div>
 
+
 </div>
+
 
 
 
 
 <div class="photo">
 
+
 <img src="travel2.jpg">
+
 
 <div class="caption">
 
@@ -659,14 +846,18 @@ World Exploration
 
 </div>
 
+
 </div>
+
 
 
 
 
 <div class="photo">
 
+
 <img src="life1.jpg">
+
 
 <div class="caption">
 
@@ -674,14 +865,18 @@ Lifestyle Moments
 
 </div>
 
+
 </div>
+
 
 
 
 
 <div class="photo">
 
+
 <img src="project1.jpg">
+
 
 <div class="caption">
 
@@ -689,7 +884,10 @@ Professional Projects
 
 </div>
 
+
 </div>
+
+
 
 
 
@@ -740,6 +938,7 @@ Exploring new projects, opportunities and experiences.
 
 
 
+
 <div class="card">
 
 
@@ -758,6 +957,7 @@ Learning, growing and building meaningful connections.
 
 
 </div>
+
 
 
 
@@ -783,6 +983,7 @@ Continuing to explore possibilities and create value.
 
 
 
+
 </section>
 
 
@@ -801,6 +1002,7 @@ Continuing to explore possibilities and create value.
 My Journey Map
 
 </h2>
+
 
 
 
@@ -872,6 +1074,8 @@ Learning from history, art and different lifestyles.
 
 
 
+
+
 </section>
 
 
@@ -902,6 +1106,7 @@ I would love to hear from you.
 
 
 
+
 <p>
 
 📞 Phone:
@@ -911,6 +1116,7 @@ I would love to hear from you.
 +1 (555) 123-4567
 
 </p>
+
 
 
 
@@ -930,7 +1136,11 @@ Call Me
 
 
 
+
 <br><br>
+
+
+
 
 
 
@@ -941,41 +1151,78 @@ Call Me
 
 
 
-<label>Name</label>
+<label>
+
+Name
+
+</label>
+
 
 <br>
 
 
-<input 
-type="text"
-name="name"
-placeholder="Your Name"
-required>
-
-
-<br><br>
-
-
-
-<label>Email</label>
-
-<br>
 
 
 <input
-type="email"
-name="email"
-placeholder="Your Email"
+
+type="text"
+
+name="name"
+
+placeholder="Your Name"
+
 required>
+
+
 
 
 <br><br>
 
 
 
-<label>Message</label>
+
+
+<label>
+
+Email
+
+</label>
+
 
 <br>
+
+
+
+
+<input
+
+type="email"
+
+name="email"
+
+placeholder="Your Email"
+
+required>
+
+
+
+
+<br><br>
+
+
+
+
+
+<label>
+
+Message
+
+</label>
+
+
+<br>
+
+
 
 
 <textarea
@@ -991,7 +1238,12 @@ required>
 </textarea>
 
 
+
+
+
 <br><br>
+
+
 
 
 
@@ -1000,6 +1252,7 @@ required>
 Send Message
 
 </button>
+
 
 
 
@@ -1044,6 +1297,7 @@ GitHub
 
 
 
+
 </section>
 
 
@@ -1070,6 +1324,7 @@ GitHub
 AC Personal Brand | Exploring Ideas & Creating Connections
 
 </p>
+
 
 
 </footer>
