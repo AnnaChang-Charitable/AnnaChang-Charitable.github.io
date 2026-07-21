@@ -13,20 +13,15 @@
 
 <meta name="description" content="Anna Chang personal website. Exploring ideas, connecting people and creating possibilities.">
 
-
 <meta name="author" content="Anna Chang">
-
 
 
 <style>
 
 
 html {
-
 scroll-behavior:smooth;
-
 }
-
 
 
 body {
@@ -42,6 +37,7 @@ color:#333;
 }
 
 
+/* Navigation */
 
 
 nav {
@@ -63,7 +59,6 @@ box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 
-
 nav a {
 
 color:#1f2937;
@@ -77,7 +72,6 @@ font-weight:bold;
 }
 
 
-
 nav a:hover {
 
 color:#2563eb;
@@ -86,6 +80,9 @@ color:#2563eb;
 
 
 
+
+
+/* Hero */
 
 
 header {
@@ -114,7 +111,6 @@ color:white;
 text-align:center;
 
 padding:110px 20px;
-
 
 }
 
@@ -167,6 +163,7 @@ margin-top:30px;
 
 
 
+
 header h1 {
 
 font-size:55px;
@@ -203,7 +200,6 @@ font-size:22px;
 
 button {
 
-
 background:#2563eb;
 
 color:white;
@@ -218,7 +214,6 @@ font-size:17px;
 
 cursor:pointer;
 
-
 }
 
 
@@ -231,6 +226,10 @@ background:#1d4ed8;
 
 
 
+
+
+
+/* Sections */
 
 
 section {
@@ -263,9 +262,7 @@ font-size:30px;
 
 
 
-
 .card {
-
 
 background:#f1f5f9;
 
@@ -275,14 +272,15 @@ margin-top:20px;
 
 border-radius:12px;
 
-
 }
 
 
 
 
-.gallery {
+/* Gallery */
 
+
+.gallery {
 
 display:grid;
 
@@ -290,25 +288,21 @@ grid-template-columns:repeat(2,1fr);
 
 gap:25px;
 
-
 }
 
 
 
 .photo {
 
-
 overflow:hidden;
 
 border-radius:15px;
-
 
 }
 
 
 
 .photo img {
-
 
 width:100%;
 
@@ -318,23 +312,19 @@ object-fit:cover;
 
 transition:0.4s;
 
-
 }
 
 
 
 .photo img:hover {
 
-
 transform:scale(1.08);
-
 
 }
 
 
 
 .caption {
-
 
 padding:15px;
 
@@ -344,10 +334,8 @@ font-weight:bold;
 
 background:#f1f5f9;
 
-
 }
-
-/* Form */
+/* Contact Form */
 
 
 form label {
@@ -385,9 +373,7 @@ font-family:Arial;
 
 textarea {
 
-
 resize:none;
-
 
 }
 
@@ -418,6 +404,7 @@ text-decoration:none;
 
 
 
+
 footer {
 
 
@@ -431,6 +418,7 @@ color:#666;
 
 
 }
+
 
 
 
@@ -470,6 +458,7 @@ padding:25px;
 }
 
 
+
 }
 
 
@@ -491,20 +480,39 @@ padding:25px;
 <nav>
 
 
-<a href="#about">About</a>
+<a href="#about">
+
+About
+
+</a>
 
 
-<a href="#gallery">Gallery</a>
+<a href="#gallery">
+
+Gallery
+
+</a>
 
 
-<a href="#journey">Journey</a>
+<a href="#journey">
+
+Journey
+
+</a>
 
 
-<a href="#map">Map</a>
+<a href="#map">
+
+Map
+
+</a>
 
 
-<a href="#contact">Contact</a>
+<a href="#contact">
 
+Contact
+
+</a>
 
 
 </nav>
@@ -525,6 +533,7 @@ padding:25px;
 AC
 
 </div>
+
 
 
 <img src="profile.jpg" class="profile">
@@ -566,6 +575,7 @@ Discover More
 </a>
 
 
+
 </header>
 
 
@@ -584,6 +594,7 @@ Discover More
 About Me
 
 </h2>
+
 
 
 <p>
@@ -616,6 +627,7 @@ This website represents my journey, experiences and personal growth.
 My Gallery
 
 </h2>
+
 
 
 <div class="gallery">
@@ -683,7 +695,6 @@ Professional Projects
 
 
 
-
 </div>
 
 
@@ -708,8 +719,8 @@ My Journey
 
 
 
-
 <div class="card">
+
 
 <h3>
 
@@ -749,6 +760,7 @@ Learning, growing and building meaningful connections.
 
 
 </div>
+
 
 
 
@@ -864,7 +876,6 @@ Learning from history, art and different lifestyles.
 
 
 
-
 </section>
 
 
@@ -885,11 +896,47 @@ Let's Connect
 </h2>
 
 
+
 <p>
 
 I would love to hear from you.
 
 </p>
+
+
+
+
+<p>
+
+📞 Phone:
+
+<br>
+
++1 (555) 123-4567
+
+</p>
+
+
+
+
+<a href="tel:+15551234567">
+
+
+<button>
+
+Call Me
+
+</button>
+
+
+</a>
+
+
+
+
+
+<br><br>
+
 
 
 
@@ -908,15 +955,19 @@ Name
 <br>
 
 
-<input 
-type="text" 
+
+<input
+
+type="text"
+
 name="name"
+
 placeholder="Your Name"
+
 required>
 
 
 <br><br>
-
 
 
 
@@ -932,15 +983,20 @@ Email
 
 
 
-<input 
+
+<input
+
 type="email"
+
 name="email"
+
 placeholder="Your Email"
+
 required>
 
 
-<br><br>
 
+<br><br>
 
 
 
@@ -953,6 +1009,7 @@ Message
 
 
 <br>
+
 
 
 
@@ -969,8 +1026,9 @@ required>
 </textarea>
 
 
-<br><br>
 
+
+<br><br>
 
 
 
@@ -1039,6 +1097,7 @@ GitHub
 </p>
 
 
+
 <p>
 
 AC Personal Brand | Exploring Ideas & Creating Connections
@@ -1046,8 +1105,8 @@ AC Personal Brand | Exploring Ideas & Creating Connections
 </p>
 
 
-
 </footer>
+
 
 
 
